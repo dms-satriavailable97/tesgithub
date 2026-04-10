@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Project</title>
+    <meta name="description" content="Halaman daftar project portfolio." />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar container" aria-label="Navigasi utama">
+        <a class="logo" href="index.html">PortoInformatika</a>
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Buka menu navigasi">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a class="active" href="project.html">Project</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="theme-toggle" id="themeToggle" aria-label="Ganti tema">🌙</button>
+      </nav>
+    </header>
+
+    <main class="container page">
+      <!-- Daftar project menggunakan grid -->
+      <section class="reveal">
+        <h1>Project Portfolio</h1>
+        <p>Beberapa contoh project sederhana yang pernah saya kerjakan:</p>
+      </section>
+
+      <section class="projects-grid reveal">
+        <article class="card project-card">
+          <h2>To-Do List App</h2>
+          <p>Aplikasi daftar tugas sederhana dengan JavaScript murni.</p>
+          <a href="#" aria-label="Demo To-Do List">Demo (placeholder)</a>
+        </article>
+
+        <article class="card project-card">
+          <h2>Landing Page UKM</h2>
+          <p>Website profil organisasi kampus dengan desain responsif.</p>
+          <a href="#" aria-label="Demo Landing Page UKM">Demo (placeholder)</a>
+        </article>
+
+        <article class="card project-card">
+          <h2>Kalkulator Nilai</h2>
+          <p>Alat hitung nilai akhir mata kuliah berbasis form input.</p>
+          <a href="#" aria-label="Demo Kalkulator Nilai">Demo (placeholder)</a>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2026 Portfolio Mahasiswa Informatika.</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
