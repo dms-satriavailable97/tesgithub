@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Home</title>
+    <meta
+      name="description"
+      content="Portfolio personal mahasiswa Informatika untuk menampilkan profil, project, dan kontak."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header utama berisi logo, navigasi, dan tombol dark mode -->
+    <header class="site-header">
+      <nav class="navbar container" aria-label="Navigasi utama">
+        <a class="logo" href="index.html">PortoInformatika</a>
+
+        <!-- Tombol hamburger untuk tampilan mobile -->
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-expanded="false"
+          aria-controls="navMenu"
+          aria-label="Buka menu navigasi"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <!-- Menu navigasi antar halaman -->
+        <ul class="nav-menu" id="navMenu">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="project.html">Project</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <!-- Tombol dark mode -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Ganti tema">
+          🌙
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Section hero sebagai landing page utama -->
+      <section class="hero container reveal">
+        <div>
+          <p class="eyebrow">Mahasiswa Informatika Semester 4</p>
+          <h1>Halo, saya membangun website portfolio yang sederhana & profesional.</h1>
+          <p class="hero-text">
+            Website ini berisi profil singkat, daftar project, dan informasi kontak untuk
+            kolaborasi atau peluang magang.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="project.html">Lihat Project</a>
+            <a class="btn btn-secondary" href="contact.html">Hubungi Saya</a>
+          </div>
+        </div>
+        <aside class="hero-card">
+          <h2>Fokus Saat Ini</h2>
+          <ul>
+            <li>Front-end fundamentals (HTML, CSS, JavaScript)</li>
+            <li>UI/UX dasar untuk web responsif</li>
+            <li>Pengembangan project portfolio</li>
+          </ul>
+        </aside>
+      </section>
+
+      <!-- Section highlight keunggulan -->
+      <section class="highlights container reveal">
+        <article class="card">
+          <h3>Clean Code</h3>
+          <p>Struktur file rapi, penamaan konsisten, dan mudah dikembangkan.</p>
+        </article>
+        <article class="card">
+          <h3>Responsive Design</h3>
+          <p>Tampilan tetap nyaman di mobile maupun desktop.</p>
+        </article>
+        <article class="card">
+          <h3>Modern Styling</h3>
+          <p>Menggunakan Flexbox/Grid, transisi, dan animasi sederhana.</p>
+        </article>
+      </section>
+    </main>
+
+    <!-- Footer situs -->
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2026 Portfolio Mahasiswa Informatika.</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

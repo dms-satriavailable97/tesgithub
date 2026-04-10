@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | About</title>
+    <meta name="description" content="Halaman tentang profil personal." />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar container" aria-label="Navigasi utama">
+        <a class="logo" href="index.html">PortoInformatika</a>
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Buka menu navigasi">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="about.html">About</a></li>
+          <li><a href="project.html">Project</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="theme-toggle" id="themeToggle" aria-label="Ganti tema">🌙</button>
+      </nav>
+    </header>
+
+    <main class="container page reveal">
+      <!-- Konten profil / about -->
+      <section>
+        <h1>Tentang Saya</h1>
+        <p>
+          Saya mahasiswa Informatika semester 4 yang memiliki ketertarikan pada
+          pengembangan web, khususnya front-end. Saya senang membangun antarmuka
+          yang sederhana, jelas, dan mudah digunakan.
+        </p>
+        <p>
+          Saat ini saya terus belajar best practice seperti semantic HTML,
+          responsive layout, dan JavaScript dasar untuk interaktivitas website.
+        </p>
+      </section>
+
+      <!-- Ringkasan kemampuan -->
+      <section class="skills-grid">
+        <article class="card">
+          <h2>Tech Stack Dasar</h2>
+          <ul>
+            <li>HTML5 Semantic</li>
+            <li>CSS3 (Flexbox & Grid)</li>
+            <li>JavaScript ES6 Dasar</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h2>Soft Skills</h2>
+          <ul>
+            <li>Problem Solving</li>
+            <li>Komunikasi Tim</li>
+            <li>Manajemen Waktu</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2026 Portfolio Mahasiswa Informatika.</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
