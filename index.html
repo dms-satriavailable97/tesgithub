@@ -3,93 +3,168 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio | Home</title>
+    <title>Portfolio Mahasiswa Informatika</title>
     <meta
       name="description"
-      content="Portfolio personal mahasiswa Informatika untuk menampilkan profil, project, dan kontak."
+      content="Portfolio mahasiswa informatika untuk menampilkan profil, skill, dan project secara modern."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- Header utama berisi logo, navigasi, dan tombol dark mode -->
-    <header class="site-header">
+    <header class="site-header" id="siteHeader">
       <nav class="navbar container" aria-label="Navigasi utama">
-        <a class="logo" href="index.html">PortoInformatika</a>
+        <a href="#home" class="logo">Informatika<span>.</span></a>
 
-        <!-- Tombol hamburger untuk tampilan mobile -->
         <button
           class="nav-toggle"
           id="navToggle"
-          aria-expanded="false"
+          aria-label="Buka menu"
           aria-controls="navMenu"
-          aria-label="Buka menu navigasi"
+          aria-expanded="false"
         >
           <span></span>
           <span></span>
           <span></span>
         </button>
 
-        <!-- Menu navigasi antar halaman -->
         <ul class="nav-menu" id="navMenu">
-          <li><a class="active" href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="project.html">Project</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#tentang">Tentang</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#kontak">Kontak</a></li>
         </ul>
-
-        <!-- Tombol dark mode -->
-        <button class="theme-toggle" id="themeToggle" aria-label="Ganti tema">
-          🌙
-        </button>
       </nav>
     </header>
 
     <main>
-      <!-- Section hero sebagai landing page utama -->
-      <section class="hero container reveal">
-        <div>
-          <p class="eyebrow">Mahasiswa Informatika Semester 4</p>
-          <h1>Halo, saya membangun website portfolio yang sederhana & profesional.</h1>
-          <p class="hero-text">
-            Website ini berisi profil singkat, daftar project, dan informasi kontak untuk
-            kolaborasi atau peluang magang.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="project.html">Lihat Project</a>
-            <a class="btn btn-secondary" href="contact.html">Hubungi Saya</a>
-          </div>
+      <section class="hero container" id="home">
+        <p class="badge reveal">Portfolio Mahasiswa Informatika</p>
+        <h1 class="reveal">
+          Halo, saya <span>Raka Pratama</span> — calon Frontend Engineer yang fokus pada UI modern,
+          clean code, dan pengalaman pengguna.
+        </h1>
+        <p class="hero-text reveal">
+          Saya membangun antarmuka web yang responsif dan mudah digunakan. Portfolio ini dirancang
+          untuk membantu recruiter melihat skill teknis, pengalaman project, dan cara saya berpikir
+          dalam membangun produk digital.
+        </p>
+        <div class="hero-actions reveal">
+          <a class="btn btn-primary" href="#project">Lihat Project</a>
+          <a class="btn btn-ghost" href="#kontak">Hubungi Saya</a>
         </div>
-        <aside class="hero-card">
-          <h2>Fokus Saat Ini</h2>
-          <ul>
-            <li>Front-end fundamentals (HTML, CSS, JavaScript)</li>
-            <li>UI/UX dasar untuk web responsif</li>
-            <li>Pengembangan project portfolio</li>
-          </ul>
-        </aside>
       </section>
 
-      <!-- Section highlight keunggulan -->
-      <section class="highlights container reveal">
-        <article class="card">
-          <h3>Clean Code</h3>
-          <p>Struktur file rapi, penamaan konsisten, dan mudah dikembangkan.</p>
-        </article>
-        <article class="card">
-          <h3>Responsive Design</h3>
-          <p>Tampilan tetap nyaman di mobile maupun desktop.</p>
-        </article>
-        <article class="card">
-          <h3>Modern Styling</h3>
-          <p>Menggunakan Flexbox/Grid, transisi, dan animasi sederhana.</p>
-        </article>
+      <section class="section container" id="tentang">
+        <div class="section-head reveal">
+          <p class="section-kicker">Tentang Saya</p>
+          <h2>Siap berkontribusi di tim teknologi</h2>
+        </div>
+        <div class="about-card reveal">
+          <p>
+            Saya adalah mahasiswa Informatika yang memiliki minat kuat pada frontend development dan
+            UI/UX. Saya terbiasa mengubah kebutuhan menjadi tampilan website yang rapi, modern, dan
+            fungsional. Saya suka belajar cepat, terbuka terhadap feedback, dan terbiasa bekerja
+            dengan target.
+          </p>
+        </div>
+      </section>
+
+      <section class="section container" id="skill">
+        <div class="section-head reveal">
+          <p class="section-kicker">Skill</p>
+          <h2>Teknologi yang saya kuasai</h2>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <div class="skill-title">
+              <h3>HTML5</h3>
+              <span>90%</span>
+            </div>
+            <div class="bar"><span style="width: 90%"></span></div>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-title">
+              <h3>CSS3</h3>
+              <span>85%</span>
+            </div>
+            <div class="bar"><span style="width: 85%"></span></div>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-title">
+              <h3>JavaScript</h3>
+              <span>80%</span>
+            </div>
+            <div class="bar"><span style="width: 80%"></span></div>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-title">
+              <h3>UI/UX Design</h3>
+              <span>75%</span>
+            </div>
+            <div class="bar"><span style="width: 75%"></span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container" id="project">
+        <div class="section-head reveal">
+          <p class="section-kicker">Project</p>
+          <h2>Project pilihan</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <h3>Website Landing UMKM</h3>
+            <p>
+              Mendesain dan membangun landing page produk UMKM dengan performa cepat dan tampilan
+              mobile-first.
+            </p>
+            <a href="#" aria-label="Lihat detail project Website Landing UMKM">Lihat Detail →</a>
+          </article>
+          <article class="project-card reveal">
+            <h3>Aplikasi To-Do Mahasiswa</h3>
+            <p>
+              Aplikasi manajemen tugas berbasis JavaScript dengan fitur filter, status tugas, dan
+              penyimpanan lokal.
+            </p>
+            <a href="#" aria-label="Lihat detail project Aplikasi To-Do Mahasiswa">Lihat Detail →</a>
+          </article>
+          <article class="project-card reveal">
+            <h3>Dashboard Nilai Sederhana</h3>
+            <p>
+              Dashboard data nilai menggunakan visualisasi sederhana agar informasi akademik lebih
+              mudah dibaca.
+            </p>
+            <a href="#" aria-label="Lihat detail project Dashboard Nilai Sederhana">Lihat Detail →</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container" id="kontak">
+        <div class="section-head reveal">
+          <p class="section-kicker">Kontak</p>
+          <h2>Mari terhubung</h2>
+        </div>
+        <div class="contact-card reveal">
+          <p>Tertarik berdiskusi untuk magang, kolaborasi, atau peluang kerja?</p>
+          <ul>
+            <li>Email: rakapratama@mail.com</li>
+            <li>LinkedIn: linkedin.com/in/rakapratama</li>
+            <li>Lokasi: Jakarta, Indonesia</li>
+          </ul>
+          <a href="mailto:rakapratama@mail.com" class="btn btn-primary">Kirim Email</a>
+        </div>
       </section>
     </main>
 
-    <!-- Footer situs -->
     <footer class="site-footer">
-      <div class="container">
-        <p>© 2026 Portfolio Mahasiswa Informatika.</p>
+      <div class="container footer-wrap">
+        <p>© 2026 Raka Pratama. Portfolio Mahasiswa Informatika.</p>
       </div>
     </footer>
 
